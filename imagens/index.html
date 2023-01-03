@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Midias em HTML</title>
+</head>
+<body>
+    <h1>Imagens Dinamicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes
+      ou simplismente aumente e diminu o tamanho do navegador
+    </p>
+    <!--Criar varias fontes-->
+    <picture> 
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" 
+        type="imagens/png">
+        <img src="imagens/foto-m.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo audio</h1>
+    <p></p>
+
+    <audio>
+        <source src="midia/A Walk Into Space - Topher Mohr and Alex Elena.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio src="midia/A Walk Into Space - Topher Mohr and Alex Elena.mp3" controls autoplay></audio>
+    <!-- Mp3-Wav-OGG-->
+
+    <!-- Videos,melhores formatos Mp4,webM,OGV-->
+  <h1>hospedagem local</h1>
+  <p>Essee video esta no meu proprio servidor</p>
+
+
+<video width="500px" poster="imagens/foto-m.png" controls>
+    <source src="midia/pexels-pk-g-6924608.mp4" type="video/mp4">
+    <p>seu navegador nao tem compatibilidade</p>
+</video>
+
+<h1>Inserindo vieos do tyoutube</h1>
+ <p>Redução de custos</p>
+ <iframe width="560" height="315" 
+  src="https://www.youtube.com/embed/FdE5G95B7Mg" title="YouTube video player" 
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+
+ </iframe>
+
+</body>
+</html>

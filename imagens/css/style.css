@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+background-color: rgb(44, 196, 120);
+text-align: center;
+}
+/*Tablet max 768px*/
+@media screen and (max-width: 768px) { 
+   body{
+    background-color: aqua;
+   } 
+}
+/* Celular max 600px*/
+@media screen and (max-width: 600px) {
+    body{
+        background-color: aquamarine;
+    }
+}
+
+/*Barra lateral Tablet, saia do lado para baixo*/
+
+@media screen and (max-width: 768px) {
+    section, aside {
+        width: 100%;
+        padding: 0%;
+    }
+}
+
+/*Celular*/
+@media screen and (max-width: 600px) {
+    new li {
+       float: none;
+       text-align: center;
+       width: 100%;
+    }
+}
